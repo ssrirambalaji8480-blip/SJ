@@ -112,6 +112,41 @@
             margin: 15px auto 30px;
         }
 
+        /* Custom Calendar Icon */
+        .custom-calendar {
+            display: inline-flex;
+            flex-direction: column;
+            width: 45px;
+            height: 50px;
+            background-color: var(--bg-white);
+            border: 2px solid var(--button-dark);
+            border-radius: 6px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-right: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transform: translateY(-4px); /* aligns it nicely with the text */
+        }
+
+        .custom-calendar .cal-month {
+            background-color: var(--button-dark);
+            color: var(--bg-white);
+            font-size: 0.65rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--button-dark);
+        }
+
+        .custom-calendar .cal-day {
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            font-weight: 800;
+            line-height: 1.5;
+            background-color: var(--bg-white);
+        }
+
         .text-center {
             text-align: center;
         }
@@ -465,7 +500,13 @@
     <!-- Events Details Section -->
     <div class="bg-grey">
         <section id="events">
-            <h2 class="section-title">📅 Event Highlights</h2>
+               <h2 class="section-title">
+    <div class="custom-calendar">
+        <span class="cal-month">Jul</span>
+        <span class="cal-day">25</span>
+    </div>
+    Event Highlights
+    </h2>
             <div class="grid-2">
                 <div class="card">
                     <h3>Key Details</h3>
