@@ -235,6 +235,26 @@
             filter: grayscale(0%);
         }
 
+        .gallery-item {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px); /* Adds a slight lift effect when hovered */
+        }
+
+        .gallery-caption {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
         /* Forms */
         form {
             display: flex;
@@ -478,14 +498,17 @@
             <div class="gallery-grid">
                 <a href="https://drive.google.com/drive/folders/1q0xVP4cDEo-PgZO9xG0ZBOgbdEicWo-0" target="_blank">
                     <img src="sov1.jpg" alt="Sovenir">
+                     <p class="gallery-caption">College Sovenir Book, 2001</p>
                 </a>
                 
                 <a href="https://drive.google.com/drive/folders/195B4hbDn8Hy_emzILTW_ToQ4-7wkkQxI" target="_blank">
                     <img src="AfterCollege.jpeg" alt="AfterCollege">
+                    <p class="gallery-caption">After College Rendezvous</p>
                 </a>
                 
                 <a href="https://drive.google.com/drive/folders/12iL70di9mqyXzX_nEZeE8uHNljBArOhe" target="_blank">
                     <img src="College.jpeg" alt="College">
+                     <p class="gallery-caption">College Nostalgia</p>
                 </a>
                 
                 
