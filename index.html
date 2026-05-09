@@ -449,6 +449,31 @@
                 font-size: 2rem;
             }
         }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366; /* Official WhatsApp Green */
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1); /* Slight zoom effect when hovering */
+        }
     </style>
 </head>
 <body>
@@ -717,5 +742,9 @@
             }
         }, 1000);
     </script>
+     <!-- Floating WhatsApp Button -->
+    <a href="https://chat.whatsapp.com/DhIVI29QYtkHZfXOI9y9OZ" target="_blank" class="floating-whatsapp" title="Join our WhatsApp Group">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
